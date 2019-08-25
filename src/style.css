@@ -1,0 +1,266 @@
+* {
+	/* 	 	border: 2px solid black; */
+	padding: 0;
+	margin: 0;
+	
+}
+
+:root {
+	--main-bg-clr: #262626;
+	--secondary-bg-clr: #ffffff;
+	--text-form-clr: #ffec60;
+	--form-fnt: "Poiret One", cursive;
+	
+}
+
+.content {
+	background: var(--main-bg-clr);
+	width: auto;
+	height: 1000px;
+
+}
+main {
+	min-width: 300px;
+	width: 900px;
+	height: 799px;
+	margin: auto;
+	text-align: center;
+	border-radius: 10px;
+	background-color: #ffffff;
+	background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+	box-sizing: border-box;
+}
+
+#title-wrapper {
+	background: linear-gradient(
+		to bottom,
+		var(--secondary-bg-clr) 30%,
+		var(--main-bg-clr)
+	);
+	background-color: #ffffff;
+	background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+	padding: 20px;
+	text-align: center;
+}
+
+/* ----Header area ---- */
+
+#title-wrapper h1 {
+	font-family: "Righteous", cursive;
+	font-weight: lighter;
+	font-size: 2.5rem;
+	text-decoration: underline black dashed;
+}
+
+#description {
+	display: flex;
+	justify-content: flex-start;
+	display: inline-block;
+
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 1.2rem;
+	font-family: var(--form-fnt);
+	font-weight: bold;
+}
+
+/* label start */
+
+form {
+	/* 	border: 2px solid black; */
+	margin: 50px auto;
+}
+
+span {
+	display: inline-block;
+	margin-left: 5px;
+	font-family: "Julius Sans One", sans-serif;
+}
+
+span::first-letter {
+	text-transform: uppercase;
+}
+
+.align-left {
+	display: flex;
+	flex-direction: row;
+	margin: 5px;
+}
+
+label {
+	width: 45%;
+	text-align: right;
+	margin-right: 10px;
+
+	padding: 5px;
+	font-family: "Julius Sans One", sans-serif;
+
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	transition-duration: 500ms;
+}
+
+#dropdown {
+	font-family: "Julius Sans One", sans-serif;
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+	width: 250px;
+	border-radius: 3px;
+	padding: 10px 10px;
+	margin: 15px 0px;
+	box-sizing: border-box;
+	border: none;
+	border: 1px silver solid;
+	transition-duration: 500ms;
+	text-transform: uppercase;
+}
+
+/* Text-Focus-Changes-when-clicked  */
+
+*:focus {
+	outline-style: dashed;
+	outline-color: black;
+	outline-width: 1px;
+	box-shadow: 10px black;
+}
+
+/* <><><><><><>< Comment box ><><><><><><>  */
+
+#comment-wrapper {
+	margin-top: 5px;
+}
+
+#comment {
+	width: auto;
+	border: 0.5px silver solid;
+	font-family: "Julius Sans One", sans-serif;
+	border-radius: 5px;
+	padding: 10px;
+	border: 1px silver solid;
+}
+#comment:focus {
+	box-shadow: -10px 5px 10px #aaaaaa;
+}
+
+/* ><>><<><><>< Submit-button ><>><><<<>< */
+
+#submit {
+	font-family: "Julius Sans One", sans-serif;
+	margin-top: 10px;
+	border: 0.5px silver solid;
+	padding: 10px 15px;
+	border-radius: 5px;
+	background: linear-gradient(to right, #ededed 60%, #d6d6d6 100%);
+	transition-duration: 500ms;
+}
+#submit:hover {
+	border-radius: 10px;
+	background: linear-gradient(to left, #666666 20%, #d1d1d1 100%);
+	color: white;
+	box-shadow: 0px 10px 5px #aaaaaa;
+}
+
+/* Media-Query */
+/* Media-Query */
+/* Media-Query */
+/* Media-Query */
+
+
+@media (max-width: 950px) {
+	
+	
+	
+	.content {
+	background: var(--main-bg-clr);
+	width: auto;
+	height: 1050px;
+		padding: 15px;
+
+}
+	
+	#title-wrapper {
+		 
+	 
+		display: none;
+	}
+
+	main {
+		width: 95%;
+		height: auto;
+		padding: 0 30px 20px;
+		border-radius: 0;
+	}
+
+	#title-wrapper h1 {
+		display: none;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="number"],
+	select {
+		width: 100%;
+	}
+
+	label {
+		width: 100%;
+		text-align: left;
+		margin-right: 5px;
+		 
+		padding: 0px;
+		font-family: "Julius Sans One", sans-serif;
+
+		color: black;
+		display: flex;
+		/* 	align-items: center; */
+
+		justify-content: flex-start;
+	}
+
+	.align-left {
+		flex-direction: column;
+	}
+
+	.radio-btn-wrapper {
+		text-align: left;
+		margin-left: 5px;
+		padding: 10px 0 0;
+	}
+
+	.chkbx-btn-wrapper {
+		text-align: left;
+		margin-left: 5px;
+		padding: 10px 0 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	input[type="checkbox"] {
+		margin-right: 2px;
+		width: 20px;
+		height: 18px;
+	}
+	
+	#comment {
+		width: 50%;
+	}
+}
+
+
+@media (max-width: 530px){
+		.content {
+	 
+	height: 100%;
+	 
+
+}
+}

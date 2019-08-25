@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Delivery service Survey form [ FCC Survey form ] by rohil</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Poiret+One&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+
+<div class="content">
+
+	<div id="title-wrapper">
+		<h1 id="title">Delivery service Survey form</h1>
+
+	</div>
+
+	<main>
+
+		<form action="" id="survey-form">
+			<p id="description">Help us to take the best decision for our service</p>
+			<!--  Name Email Age -->
+			<div class="align-left">
+				<label for="name" id="name-label">*Name:</label>
+				<input type="text" name="name" id="name" required placeholder="Enter Your name">
+			</div>
+
+			<br>
+			<div class="align-left">
+				<label for="email" id="email-label" class="right">*Email:</label>
+				<input type="email" name="email" id="email" required placeholder="Enter your email">
+
+			</div>
+			<br>
+
+			<div class="align-left">
+
+				<label for="number" id="number-label">*Age:</label>
+				<input type="number" name="number" id="number" min="14" max="100" required placeholder="Age" class="right">
+			</div>
+
+			<br>
+
+			<!-- End of :  Name Email Age -->
+
+			<div class="align-left">
+				<label for="dropdown" class="left">Choose a delivery type you like:</label>
+				<select name="delivery-type" id="dropdown" class="right">
+       <option value="user-prefrence">One day delivery(50$)</option>
+       <option value="user-prefrence">Ultra-fast delivery(20$)</option>
+       <option value="user-prefrence">Free delivery</option>
+				</select>
+			</div>
+
+			<br>
+
+			<div class="align-left">
+				<label for="rating" class="left">How satisfied are you:</label>
+
+				<div class="radio-btn-wrapper">
+
+					<input type="radio" name="rating" value="one"><span>1</span>
+
+					<input type="radio" name="rating" value="two"><span>2</span>
+
+					<input type="radio" name="rating" value="three"><span>3</span>
+
+					<input type="radio" name="rating" value="four"><span>4</span>
+
+					<input type="radio" name="rating" value="five"><span>5</span>
+				</div>
+			</div>
+
+			<br>
+
+			<div class="align-left">
+
+				<label for="feedback">How likely are you to pay for timed delivery:</label>
+				<div class="chkbx-btn-wrapper">
+
+					<span>	<input type="checkbox" name="feedback" value="very-likely"><span>very-likely</span></span>
+					<span>	<input type="checkbox" name="feedback" value="not-sure"><span>Not-sure</span></span>
+					<span>	<input type="checkbox" name="feedback" value="i dont think so"><span>I dont think i will</span> </span>
+					
+				</div>
+
+			</div>
+
+			<br>
+
+			<div id="comment-wrapper">
+				<textarea name="comment" id="comment" cols="40" rows="5" placeholder="Please enter your comment..."></textarea></div>
+
+			<button id="submit">Submit</button>
+
+		</form>
+	</main>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
